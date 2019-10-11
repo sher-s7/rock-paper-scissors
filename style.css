@@ -1,26 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #3c3c3c;
 }
 ul li{
     display: inline-block;
 }
 ul{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 button{
     width: 300px;
     height: 250px;  
+    margin: 10px;
     border: 1px solid transparent;
     background-color: grey;
     border-radius: 25px;
     font-size: 150px;
     cursor: pointer;
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
 
 }
 button:hover{
     border-radius: 50px;
+    transform: scale(1.02)
 }
 button:active{
     border-radius: 40px;
@@ -29,7 +33,12 @@ button:active{
 .scores, .choices{
     text-align: center;
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 23px;
+    color: #ffdc5d;
+    font-family: 'Bitter', serif;
+}
+#playerScore, #compScore{
+    color: #ef9645;
 }
 .choices{
     max-width: 350px;
@@ -42,7 +51,10 @@ button:active{
 #pChoice, #cChoice{
     width: 30px;
     height: 20px;
+    font-size: 25px;
     font: bold;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #ef9645;
 }
 
 button:disabled{
@@ -67,7 +79,7 @@ button:disabled:hover{
     width: 120px;
     height: 40px;
     font-size: 16px;
-    color: rgb(255, 255, 255);
+    color: white;
     border: 0px solid transparent;
     border-radius: 10px;
     background-color: grey;
@@ -77,4 +89,10 @@ button:disabled:hover{
 }
 #playbutton:hover{
     transform: scale(1.1);
+}
+#top{
+    text-align: center;
+    margin-top: 50px;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
 }
